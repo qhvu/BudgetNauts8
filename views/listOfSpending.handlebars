@@ -1,0 +1,88 @@
+<!doctype html>
+
+<html>
+ <head>
+    <title>List Of Spending</title>
+    <link rel="shortcut icon" href ="images/batLogo2.png"/>
+
+  <meta name = "viewport" content="device-width, initial-scale=1.0">
+
+  <link href="css/bootstrap.css" rel="stylesheet">
+
+  <link href="css/menuButton.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+
+
+ </head>
+
+<body>
+
+<div>
+   <!--nav bar-->
+   <div class = "navbar-nav">
+    <ul>
+      <li class = "nav-link"><a class="nav-link" href="/homeScreen">Home</a><div class = "underline"></div></li>
+      <li class = "nav-link"><a href="/budget">Budget</a><div class = "underline"></div></li>
+      <li class = "nav-link active-link"><a href="/listOfSpending">List of Spending</a><div class = "underline"></div></li>
+      <li class = "nav-link"><a href="/faq">FAQ</a><div class = "underline"></div></li>
+    </ul>
+  </div>
+
+
+
+    <div style = "float:right;" class = "">
+      <a href="#" id = "button" class = "button">+</a>
+    </div>
+
+    <table class='table-striped ' id = "table1">
+      <thead>
+
+          <th>ID</th>
+          <th>Date</th>
+          <th>Name</th>
+          <th>Category</th>
+          <th>Price</th>
+          <!--<th>Remove</th>-->
+
+      </thead>
+
+      <tbody>
+      	{{#each purchase}}
+
+            <td data-label = "ID">{{@index}}</td>
+          	<td data-label = "Date">{{date}}</td>
+          	<td data-label = "Name">{{name}}</td>
+          	<td data-label = "Category">{{category}}</td>
+          	<td data-label = "Price">${{price}}</td>
+            <td class = "text-center"><button type = "button" class = "btn" id="remove">Remove</button></td>
+
+        	</tr>
+    	</div>
+        {{/each}}
+
+      </tbody>
+    </table>
+</div>
+
+<div class = "bg-modal">
+  <div class = "modal-content">
+    <div class = "close">+</div>
+    <form method = "get" action = "/add" style="text-align: center">
+      <h1>+</h1>
+      <input type = "text" placeholder="Date" name="date">
+      <input type = "text" placeholder="Name" name="name">
+      <input type = "text" placeholder="Category" name="category">
+      <input type = "text" placeholder="Price" name="price">
+      <input type ="submit" id = "add" class = "button">
+    </form>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery.js"></script>
+<!--<script src="./js/jquery.min.js"></script>-->
+<script src="./js/bootstrap.js"></script>
+<script src="./js/menuButton.js"></script>
+<script src="./js/listOfSpending.js"></script>
+
+</body>
+</html>

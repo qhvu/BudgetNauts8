@@ -1,0 +1,52 @@
+{
+	"purchase": [
+		{
+			"date": "2/1/2020",
+			"name": "T-shirt",
+			"category": "Clothing",
+			"price": 25			
+
+		},
+		{
+			"date": "2/1/2020",
+			"name": "Sushi",
+			"category": "Food",
+			"price": 30
+
+		},
+		{
+			"date": "2/2/2020",
+			"name": "Gas",
+			"category": "Transportation",
+			"price": 20
+		},
+		{
+			"date": "2/4/2020",
+			"name": "Electric",
+			"category": "Utilities",
+			"price": 50
+
+		},
+		{
+			"date": "2/5/2020",
+			"name": "Bus",
+			"category": "Transportation",
+			"price": 2.25
+		},
+		{
+			"date": "2/9/2020",
+			"name": "Shorts",
+			"category": "Clothing",
+			"price": 15
+		}
+	],
+
+	"budget": [500], 
+
+	"savings":[10],
+
+	"save": [50],
+
+	"leftover": [307.75]
+}
+

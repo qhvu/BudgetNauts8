@@ -1,0 +1,312 @@
+body{
+  background-color: #F1B157;
+
+}
+
+/* navigation bar */
+.navbar-nav{
+  text-align: center;
+  background-color:  #8F1A24;
+  box-shadow: 0px -20px 5px 20px #333333;
+  padding: 10px;
+  font-size: 0;
+  position: sticky;
+  z-index: 2;
+  top:0;
+
+}
+
+.navbar-nav ul {
+  margin: 0;
+  padding-left: 0%;
+
+  text-align: left;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+
+.navbar-nav ul li {
+  display: inline-block;
+  font-size: 16px;
+}
+
+.navbar-nav ul li a {
+  color: #f5f5f5;
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px;
+  transition: color 0.5s;
+}
+
+.navbar-nav ul li .underline {
+  height: 3px;
+  background-color: transparent;
+  width: 0%;
+  transition: width 0.2s, background-color 0.5s;
+  margin: 0 auto;
+}
+
+.navbar-nav ul li.active-link .underline {
+  width: 100%;
+  background-color: #F1B157;
+}
+
+.navbar-nav ul li:hover .underline {
+  background-color: #F1B157;
+  width: 100%;
+}
+
+.navbar-nav ul li:hover a {
+}
+
+.navbar-nav ul li:active a {
+  transition: none;
+  color: rgba(255,255,255,0.76);
+}
+
+.navbar-container ul li:active .underline {
+  transition: none;
+  background-color: rgba(255,255,255,0.76);
+}
+
+.navbar-nav .nav-link{
+  padding-left: 7px;
+}
+
+/* make it mobile responsive */
+.responsive{
+  width: 100%;
+  height: auto;
+}
+
+/* table */
+table, td{
+   border: 1px solid #ddd;
+   padding-top: 2.5%;
+   padding-bottom: 2.5%;
+
+ }
+
+
+th{
+  vertical-align: middle;
+}
+
+ table#table1{
+   width: 80%;
+   margin-left: 10%;
+   margin-right: 15%;
+   margin-top: 20px;
+   background-color: #f1f1f1;
+   z-index: -1;
+
+
+ }
+
+
+/* make table responsive */
+
+ @media(max-width: 360px){
+  #table1 thead{
+    display: none;
+  }
+
+  #table1, #table1 tbody, #table1 tr, #table1 td{
+    display: block;
+    width: 100%;
+    top:0;
+
+  }
+
+  #table1 tr{
+    margin-bottom: 15px;
+  }
+
+  #table1 td{
+    text-align: right;
+    padding-left: 50%;
+    text-align: right;
+    position: relative;
+  }
+
+  #table1 td::before{
+    content: attr(data-label);
+    position: absolute;
+    left: 0;
+    width: 50%;
+    padding-left: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: left;
+  }
+
+  .navbar-nav ul li {
+    font-size: 12px;
+  }
+
+ }
+
+
+/* remove button */
+.btn{
+  background-color: darkred;
+  color: white;
+  padding: 8px 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.text-center{
+  text-align: center;
+  vertical-align: center;
+}
+
+.remove{
+  margin-right: 10px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.container {
+text-align: center;
+margin-top: 0px;
+position: relative;
+z-index: -1;
+}
+
+a, h1{
+   color: #26545C
+}
+
+
+#header{
+  text-align: center;
+}
+
+#borderLeftover {
+border: 5px solid black;
+}
+
+.submit{
+  padding-left: 50%;
+  padding-top: 4%;
+}
+
+/* Pop up screens */
+.bg-modal{
+  width: 100%;
+  height: 100%;
+  background-color: rbga(0,0,0,0.7);
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.modal-content{
+  width: 500px;
+  height: 300px;
+  background-color: white;
+  border-radius: 4px;
+  position: relative;
+
+}
+
+.login{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* buttons */
+.button {
+  background-color: #26545C;
+  border: 2px solid white;
+  border-radius: 30px;
+  text-decoration: none;
+  padding: 10px 28px;
+  color: white;
+  margin-top: 10px;
+  display: inline-block;
+  &:hover {
+    background-color: white;
+    color: #26545C;
+    border: 2px #26545C;
+  }
+
+}
+
+
+#button{
+  margin-right: 2%;
+  bottom: 10px;
+  right: 10px;
+  z-index: 3;
+  position: fixed;
+  align-items: center;
+}
+
+.close {
+  position: absolute;
+  top: 0;
+  right: 14px;
+  font-size: 42px;
+  transform: rotate(45deg);
+  cursor: pointer;
+
+}
+
+
+input {
+  width: 50%;
+  display: block;
+  margin: 10px auto;
+
+}
+
+.home{
+  text-align: center;
+
+}
+
+#name{
+  padding-left: 25%;
+}
+
+#name2{
+  padding-left: 28%;
+}
+
+#expenses{
+  padding-right: 35%;
+}
+#setting{
+  padding-right:45%;
+}
+#spendingHome{
+  padding-right: 40%
+}
+
+#plusSignMargin{
+  padding-left: 35%;
+}
+
+.budgetText h1{
+  text-align: center;
+  vertical-align: center;
+
+}
+
+span{
+    font-size: 50px;
+    text-align: center;
+}
+
+hr{
+  border: 2px solid black;
+  width: 30%
+}

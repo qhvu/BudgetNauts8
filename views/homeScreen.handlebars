@@ -1,0 +1,81 @@
+<!doctype html>
+
+<html>
+<head>
+	<title>BudgetNauts</title>
+	<link rel="shortcut icon" href ="images/batLogo2.png"/>
+	<meta charset="utf-8">
+	<meta name = "viewport" content="device-width, initial-scale=1.0">
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/menuButton.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="js/bootstrap.js"></script>
+
+</head>
+
+<body>
+
+	<!-- <nav class="navbar navbar-expand-sm bg-info navbar-dark">
+	  Brand/logo
+	  <a class="navbar-brand" href="/homeScreen">
+	    <img src="/images/homeIcon.png" alt="logo" style="width:40px;">
+	  </a>-->
+
+	 <!--nav bar-->
+	 <div class = "navbar-nav">
+
+	  <ul>
+	  	<li class = "nav-link active-link"><a class="nav-link" href="/homeScreen">Home</a><div class = "underline"></div></li>
+	    <li class = "nav-link"><a href="/budget">Budget</a><div class = "underline"></div></li>
+	    <li class = "nav-link"><a href="/listOfSpending">List of Spending</a><div class = "underline"></div></li>
+	    <li class = "nav-link"><a href="/faq">FAQ</a><div class = "underline"></div></li>
+	  </ul>
+	</div>
+
+<div class="container">
+	<br>
+	<h1>Welcome to Budget Bat!</h1>
+	<br>
+
+    <div>
+
+    	<h1>Amount Left: <span id="borderLeftover">{{leftover}}</h1>
+
+    </div>
+    <br>
+
+    <!--
+		<div class="progress">
+	   <div class="progress-bar bg-primary" style="width:40%">
+	     Clothing
+	   </div>
+	   <div class="progress-bar bg-warning" style="width:10%">
+	     Food
+	   </div>
+		 <div class="progress-bar bg-danger" style="width:20%">
+	     Bills
+	   </div>
+		 <div class="progress-bar bg-success" style="width:30%">
+		 	 Money Leftover
+	  </div>
+	 </div>
+<<<<<<< HEAD
+
+</div>
+=======
+	 <div class="progress">
+	 	{{#each purchase}}
+			<div class="progress-bar bg-primary" id='progress-bar' style="width:10%">
+				{{category}}
+			</div>
+		{{/each}}
+		</div>
+</div>-->
+
+<script src="./js/jquery-1.11.0.js"></script>
+<script src="./js/bootstrap.js"></script>
+<script src="./js/homeScreen.js"></script>
+
+</body>
+</html>

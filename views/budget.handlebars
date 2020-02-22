@@ -1,0 +1,64 @@
+<!doctype html>
+
+<html>
+<head>
+	<title>BudgetNauts</title>
+	<meta charset="utf-8">
+	<meta name = "viewport" content="device-width, initial-scale=1.0">
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/menuButton.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+	<!--nav bar-->
+
+	 <div class = "navbar-nav">
+	  <ul>
+	  	<li class = "nav-link"><a class="nav-link" href="/homeScreen">Home</a><div class = "underline"></div></li>
+	    <li class = "nav-link active-link"><a href="/budget">Budget</a><div class = "underline"></div></li>
+	    <li class = "nav-link"><a href="/listOfSpending">List of Spending</a><div class = "underline"></div></li>
+	    <li class = "nav-link"><a href="/faq">FAQ</a><div class = "underline"></div></li>
+	  </ul>
+	</div>
+
+	<a href="#" id = "button" class = "button">Edit Budget</a>
+
+
+<br>
+
+<div class = "budgetText" id="box">
+	<h1>Total Budget: $<span id=budget>{{budget}}</span></h1>
+
+	<h1>Percent Saved:<span id=percent>{{savings}}</span>%</h1>
+	<hr>
+	<h1>You will Save:$<span id="savings">{{save}}</span></h1>
+</div>
+
+	<div class = "bg-modal">
+	  <div class = "modal-content">
+	    <div class = "close">+</div>
+	    <form method = "get" action = "/edit" style="text-align: center">
+				<h3>
+					Enter your Budget here:
+	      	<input type = "text" placeholder="$" name="budget" id="appendBudget">
+				</h3>
+				<h3>
+					Enter the % you want to save here:
+					<input type = "text" placeholder="%" name="savings">
+				</h3>
+	      <input type ="submit" id = "add" class = "button"></input></a>
+	    </form>
+	  </div>
+	</div>
+
+<script src="https://code.jquery.com/jquery.js"></script>
+<script src="./js/bootstrap.js"></script>
+<script src="./js/menuButton.js"></script>
+<script src="./js/budget.js"></script>
+
+
+</body>
+</html>

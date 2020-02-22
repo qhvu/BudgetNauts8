@@ -1,0 +1,61 @@
+<!doctype html>
+
+<html>
+<head>
+	<title>BudgetNauts</title>
+	<link rel="shortcut icon" href ="images/batLogo2.png"/>
+	<meta charset="utf-8">
+	<meta name = "viewport" content="device-width, initial-scale=1.0">
+
+<link href="css/bootstrap.css" rel="stylesheet">
+
+	<link href="css/menuButton.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+
+
+</head>
+
+<body >
+<br>
+<div class = "login">
+	<a href="#" id = "button" class = "button">LOGIN</a> 
+	<a href="/homeScreen"> <div><fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+</fb:login-button></div> </a>
+</div>
+
+	<br>
+<div class = "home">
+	<br>
+	<h1>Don't Bat an Eye, We'll Keep Track of Your Expenses for You!</h1>
+	<br>
+	<img src = "images/bat.png" class = "responsive">
+	<br>
+	<br>
+	<h1>Easy, Free, Intuitive</h1>
+
+</div>
+
+<div class = "bg-modal">
+  <div class = "modal-content">
+  	<div class = "close">+</div>
+
+    <form action = "" style="text-align: center;">
+    	<br>
+      <img src="images/batLogo2.png">
+      <input type = "text" placeholder="Username" name="date">
+      <input type = "text" placeholder="Password" name="name">
+      <a href ="/homeScreen" class = "button">LOGIN</a>
+    </form>
+  </div>
+</div>
+
+	<script src="./js/jquery-1.11.0.js"></script>
+	<script src="./js/bootstrap.js"></script>
+	<script src="./js/menuButton.js"></script>
+	<script src="./js/index.js"></script>
+	{{> facebook}}
+	<script src="/js/facebook.js"></script>
+	<script src="http://connect.facebook.net/en_US/all.js"></script>
+	
+</body>
+</html>

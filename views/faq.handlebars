@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BudgetNauts</title>
+    <link rel="shortcut icon" href ="images/batLogo2.png"/>
+    <meta charset="utf-8">
+    <meta name = "viewport" content="device-width, initial-scale=1.0">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/menuButton.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <!--nav bar-->
+    <div class = "navbar-nav">
+     <ul>
+       <li class = "nav-link"><a class="nav-link" href="/homeScreen">Home</a><div class = "underline"></div></li>
+       <li class = "nav-link"><a href="/budget">Budget</a><div class = "underline"></div></li>
+       <li class = "nav-link"><a href="/listOfSpending">List of Spending</a><div class = "underline"></div></li>
+       <li class = "nav-link active-link""><a href="/faq">FAQ</a><div class = "underline"></div></li>
+     </ul>
+   </div>
+    <div id="accordion">
+    <div class="card">
+      <div class="card-header" id="headingOne">
+        <h5 class="mb-0">
+          <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            What is BudgetNauts?
+          </button>
+        </h5>
+      </div>
+
+      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+        <div class="card-body">
+          BudgetNauts is a daily budgeting app geared towards saving money every time you make a purchase. With our app,
+          even when it seems like you ran out of money, you actually save!
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header" id="headingTwo">
+        <h5 class="mb-0">
+          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            How Does it Work?
+          </button>
+        </h5>
+      </div>
+      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+        <div class="card-body">
+          In Budgetnauts, you can enter in a certain percentage of your budget that you want to save. As you enter each of your daily purchases
+          into our app, it will automatically add the specified percentage and tax that onto your total. As your bank account goes down,
+          your savings are increasing!
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header" id="headingThree">
+        <h5 class="mb-0">
+          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            What do I do?
+          </button>
+        </h5>
+      </div>
+      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+        <div class="card-body">
+          In order to use BudgetNauts, first navigate to the budget page located at the top. Next, enter in your total budget as well as the
+          percentage of that budget that you would like to save. Now, all that is left is to add your daily purchases into the app in the list of spending
+          page and your remaining budget will be available on the home page.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="./js/bootstrap.js"></script>
+  <script src="./js/faq.js"></script>
+
+  </body>
+  </html>
