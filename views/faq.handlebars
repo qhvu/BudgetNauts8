@@ -9,17 +9,16 @@
     <link href="css/menuButton.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <meta charset="utf-8">
+
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <script src="./js/faq.js"></script>
+    <!--<script src="./js/header.js"></script>-->
+
   </head>
   <body>
     <!--nav bar-->
-    <div class = "navbar-nav">
-     <ul>
-       <li class = "nav-link"><a class="nav-link" href="/homeScreen">Home</a><div class = "underline"></div></li>
-       <li class = "nav-link"><a href="/budget">Budget</a><div class = "underline"></div></li>
-       <li class = "nav-link"><a href="/listOfSpending">List of Spending</a><div class = "underline"></div></li>
-       <li class = "nav-link active-link""><a href="/faq">FAQ</a><div class = "underline"></div></li>
-     </ul>
-   </div>
+    {{>header}}
     <div id="accordion">
     <div class="card">
       <div class="card-header" id="headingOne">
@@ -71,9 +70,7 @@
     </div>
   </div>
 
-  <script src="https://code.jquery.com/jquery.js"></script>
-  <script src="./js/bootstrap.js"></script>
-  <script src="./js/faq.js"></script>
+
 
   </body>
   </html>

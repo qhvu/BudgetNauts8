@@ -9,8 +9,6 @@
 	<link href="css/bootstrap.css" rel="stylesheet">
 	<link href="css/menuButton.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
-	<script src="https://code.jquery.com/jquery.js"></script>
-	<script src="js/bootstrap.js"></script>
 
 </head>
 
@@ -23,16 +21,8 @@
 	  </a>-->
 
 	 <!--nav bar-->
-	 <div class = "navbar-nav">
 
-	  <ul>
-	  	<li class = "nav-link active-link"><a class="nav-link" href="/homeScreen">Home</a><div class = "underline"></div></li>
-	    <li class = "nav-link"><a href="/budget">Budget</a><div class = "underline"></div></li>
-	    <li class = "nav-link"><a href="/listOfSpending">List of Spending</a><div class = "underline"></div></li>
-	    <li class = "nav-link"><a href="/faq">FAQ</a><div class = "underline"></div></li>
-	  </ul>
-	</div>
-
+{{> header}}
 <div class="container">
 	<br>
 	<h1>Welcome to Budget Bat!</h1>
@@ -92,8 +82,12 @@
 		</div>
 </div>-->
 
+
+
+
+<script src="https://code.jquery.com/jquery.js"></script>
+<script src="js/bootstrap.js"></script>
 <script src="./js/homeScreen.js"></script>
 <script src="./js/menuButton.js"></script>
-
 </body>
 </html>
