@@ -15,7 +15,7 @@ exports.editBudget = function(request, response) {
   var save = data.budget[0] * (data.savings[0]/100);
 
 
-  data.save[0] = save;
+  data.save[0] = save.toFixed(2);
 
   //render changes
   response.render('budget', data);

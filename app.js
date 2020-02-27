@@ -18,7 +18,7 @@ var homeScreen = require('./routes/homeScreen')
 var faq = require('./routes/faq')
 var edit = require('./routes/edit')
 var data = require('./routes/data')
-
+var addHomeScreen = require('./routes/addHomeScreen')
 
 // all environments
 app.set('port', process.env.PORT || 3000);
@@ -44,10 +44,12 @@ if ('development' == app.get('env')) {
 app.get('/', index.view);
 //app.get('/home', index.view);
 app.get('/Home', index.view);
-
+app.get('/pageA', homeScreen.pageA);
+app.get('/pageB', homeScreen.pageB);
 app.get('/listofSpending', listOfSpending.view);
 // Example route
 app.get('/add', add.addExpense);
+app.get('/addHomeScreen', addHomeScreen.addHomeExpense)
 app.get('/budget', budget.view);
 app.get('/data',data.dataInfo);
 //app.get('/budgetTotal', budgetTotal.budgetInfo);

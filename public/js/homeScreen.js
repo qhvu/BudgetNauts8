@@ -14,6 +14,7 @@ function initializePage() {
  $.get('/data', amountLeft);
  $("#progress-bar").css("width", "50%");
  $("#progress-bar").attr("aria-valuenow", "50%");
+
  }
 
 function amountLeft(result){

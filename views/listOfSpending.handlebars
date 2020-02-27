@@ -6,9 +6,7 @@
     <link rel="shortcut icon" href ="images/batLogo2.png"/>
 
   <meta name = "viewport" content="device-width, initial-scale=1.0">
-
   <link href="css/bootstrap.css" rel="stylesheet">
-
   <link href="css/menuButton.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 
@@ -49,7 +47,7 @@
       <tbody>
       	{{#each purchase}}
 
-            <td data-label = "ID">({{@index}}+1)</td>
+            <td data-label = "ID">({{@index}})</td>
           	<td data-label = "Date">{{date}}</td>
           	<td data-label = "Name">{{name}}</td>
           	<td data-label = "Category">{{category}}</td>
@@ -62,7 +60,6 @@
 
       </tbody>
     </table>
-</div>
 
 <div class = "bg-modal">
   <div class = "modal-content">

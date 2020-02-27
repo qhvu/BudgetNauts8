@@ -1,40 +1,40 @@
 {
 	"purchase": [
 		{
-			"date": "2/1/2020",
+			"date": "2020-02-01",
 			"name": "T-shirt",
 			"category": "Clothing",
 			"price": 25
 
 		},
 		{
-			"date": "1/30/2019",
+			"date": "2020-02-02",
 			"name": "Sushi",
 			"category": "Food",
 			"price": 30
 
 		},
 		{
-			"date": "2/2/2020",
+			"date": "2020-02-03",
 			"name": "Gas",
 			"category": "Transportation",
 			"price": 20
 		},
 		{
-			"date": "2/1/2020",
+			"date": "2020-02-03",
 			"name": "Electric",
 			"category": "Utilities",
 			"price": 50
 
 		},
 		{
-			"date": "2/5/2020",
+			"date": "2020-02-04",
 			"name": "Bus",
 			"category": "Transportation",
 			"price": 2.25
 		},
 		{
-			"date": "2/9/2020",
+			"date": "2020-02-05",
 			"name": "Shorts",
 			"category": "Clothing",
 			"price": 15

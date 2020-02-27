@@ -40,13 +40,30 @@
 
     <div>
 
-    	<h1>Amount Left: </h1> 
-    	
+    	<h1>Amount Left: </h1>
+
     	<span id="borderLeftover">{{leftover}}</span>
 
     </div>
     <br>
-
+</div>
+{{#if pageB}}  <div style = "float:right;">
+		<a href="#" id = "button" class = "button">+</a>
+	</div>
+	<div class = "bg-modal">
+				<div class = "modal-content">
+					<div class = "close">+</div>
+					<form method = "get" action = "/addHomeScreen" style="text-align: center">
+						<h1>+</h1>
+						<input type = "date" placeholder="Date" name="date">
+						<input type = "text" placeholder="Name" name="name">
+						<input type = "text" placeholder="Category" name="category">
+						<input type = "text" placeholder="Price" name="price">
+						<input type ="submit" id = "add" class = "button">
+					</form>
+				</div>
+			</div>
+	{{else}}{{/if}}
     <!--
 		<div class="progress">
 	   <div class="progress-bar bg-primary" style="width:40%">
@@ -75,9 +92,8 @@
 		</div>
 </div>-->
 
-<script src="./js/jquery-1.11.0.js"></script>
-<script src="./js/bootstrap.js"></script>
 <script src="./js/homeScreen.js"></script>
+<script src="./js/menuButton.js"></script>
 
 </body>
 </html>

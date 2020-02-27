@@ -10,9 +10,9 @@ function initializePage() {
 	$('a').click(function(e) {
     console.log("hi");
 	});
-	$('#remove').click(function(e){
-		$.get("/data",removeRow);
-	});
+//	$('#remove').click(function(e){
+	//	$.get("/data",removeRow);
+//	});
 	$('#table1').on("click", "td", function(){
 		//alert('clicked');
 		$(this).closest('tr').remove();

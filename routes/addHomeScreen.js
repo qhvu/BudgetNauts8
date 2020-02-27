@@ -1,0 +1,20 @@
+var data = require("../data.json");
+
+// add expense
+exports.addHomeExpense = function(request, response) {
+	var date = request.query.date;
+	var name = request.query.name;
+	var category = request.query.category;
+	var price = request.query.price;
+	var rowNumber = "row"+request.query.index;
+
+	console.log("name:" + name);
+
+	var newEntry = {"date": date, "name": name, "category": category, "price": price};
+
+
+	data.purchase.push(newEntry);
+
+	response.render('homeScreen', data);
+
+}

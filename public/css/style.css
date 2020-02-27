@@ -103,6 +103,15 @@ th{
 
  }
 
+  table#table2{
+   width: 90%;
+   margin-left: 19px;
+   
+    z-index: -1;
+
+
+  }
+
 
 /* make table responsive */
 
@@ -254,6 +263,14 @@ padding-bottom: 1%;
   align-items: center;
 }
 
+#button2{
+  margin-right: 2%;
+  bottom: 10px;
+  left: 35px;
+  z-index: 3;
+  position: fixed;
+  align-items: center;
+}
 .close {
   position: absolute;
   top: 0;
