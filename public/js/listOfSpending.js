@@ -13,6 +13,12 @@ function initializePage() {
 	$('#remove').click(function(e){
 		$.get("/data",removeRow);
 	});
+	$('#table1').on("click", "td", function(){
+		//alert('clicked');
+		$(this).closest('tr').remove();
+		console.log('clicked');
+	});
+	$.get('/data', sortDate);
 }
 
 function removeRow(result){
@@ -21,4 +27,14 @@ function removeRow(result){
 	console.log(purchases);
 	purchases[purchases]
 	purchases.splice()
+}
+
+function custom_sort(a,b){
+	console.log("works");
+	return new Date(a.lastUpdated).getTime() - new Date(b.lastUpdated).getTime();
+}
+
+function sortDate(result){
+	var purchases = result['purchase'];
+	console.log(purchases);
 }

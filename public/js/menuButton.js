@@ -37,24 +37,12 @@ $(document).ready(function() {
 	$('.purchases.btn').on('click', function(e) {
 		console.log("REMOVE");
 		e.preventDefault();
-		$(this).closest('tr').remove();	
+		$(this).closest('tr').remove();
 	});
 })
 */
 
-$('#table1').on("click", "td", function(){
-	//alert('clicked');
-	$(this).closest('tr').remove();
-	console.log('clicked');
-});
 
-//nav bar animation underline
-$('.nav-link').on('click', function(e) {
-	//e.preventDefault();
-  $('.active-link').removeClass('active-link');
-  $(this).addClass('active-link');
-  console.log("REMOVE");
-});
 
 
 
@@ -68,7 +56,3 @@ for (var i = 1; i < table.rows.length; i++){
 		}
 	};
 }*/
-
-
-
-

@@ -28,7 +28,26 @@
 
 
 <br>
-
+<table class="table table-bordered" id="budgetTable">
+	<thead>
+		<tr>
+			<th id="budgetTh">Total Budget:</th>
+			<th id="budgetTh">${{budget}}</th>
+		</tr>
+	</thead>
+	<thead>
+		<tr>
+			<th id="budgetTh">Percent Saved:</th>
+			<th id="budgetTh">{{savings}}%</th>
+		</tr>
+	</thead>
+	<thead>
+		<tr>
+			<th id="budgetTh">You Will Save:</th>
+			<th id="budgetTh">${{save}}</th>
+		</tr>
+	</thead>
+  </table>
 <div class = "budgetText" id="box">
 	<h1>Total Budget: $<span id=budget>{{budget}}</span></h1>
 

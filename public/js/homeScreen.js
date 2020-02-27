@@ -32,7 +32,10 @@ function amountLeft(result){
 	console.log(budget);
 	console.log(percentage);
 	console.log(amountLeft);
-	$('#borderLeftover').html('$'+amountLeft);
+	if(amountLeft < 0){
+		$('#borderLeftover').css('color', 'red');
+	}
+	$('#borderLeftover').html('$'+ amountLeft.toFixed(2));
 	}
 
 	// $('#colorBtn').click(randomizeColors);
