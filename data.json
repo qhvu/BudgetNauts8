@@ -1,11 +1,32 @@
 {
 	"purchase": [
 		{
-			"date": "2020-02-01",
-			"name": "T-shirt",
+			"date": "2020-02-05",
+			"name": "Shorts",
 			"category": "Clothing",
-			"price": 25
+			"price": 15
+		},
 
+		{
+			"date": "2020-02-04",
+			"name": "Bus",
+			"category": "Transportation",
+			"price": 2.25
+		},
+
+		{
+			"date": "2020-02-03",
+			"name": "Electric",
+			"category": "Utilities",
+			"price": 50
+
+		},
+
+		{
+			"date": "2020-02-03",
+			"name": "Gas",
+			"category": "Transportation",
+			"price": 20
 		},
 		{
 			"date": "2020-02-02",
@@ -15,29 +36,11 @@
 
 		},
 		{
-			"date": "2020-02-03",
-			"name": "Gas",
-			"category": "Transportation",
-			"price": 20
-		},
-		{
-			"date": "2020-02-03",
-			"name": "Electric",
-			"category": "Utilities",
-			"price": 50
-
-		},
-		{
-			"date": "2020-02-04",
-			"name": "Bus",
-			"category": "Transportation",
-			"price": 2.25
-		},
-		{
-			"date": "2020-02-05",
-			"name": "Shorts",
+			"date": "2020-02-01",
+			"name": "T-shirt",
 			"category": "Clothing",
-			"price": 15
+			"price": 25
+
 		}
 	],
 
