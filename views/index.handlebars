@@ -14,7 +14,7 @@
 <body >
 <br>
 <div class = "login">
-	<a href="#" id = "button" class = "button">LOGIN</a>
+
 	<a href="/homeScreen"> <div><fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
 </fb:login-button></div> </a>
 </div>
@@ -31,22 +31,7 @@
 <a href="/homeScreen" class = "button" id="button2">Continue Without Login</a>
 </div>
 
-<div class = "bg-modal">
-  <div class = "modal-content">
-  	<div class = "close">+</div>
-
-    <form action = "" style="text-align: center;">
-    	<br>
-      <img src="images/batLogo2.png">
-      <input type = "text" placeholder="Username" name="date">
-      <input type = "text" placeholder="Password" name="name">
-      <a href ="/homeScreen" class = "button">LOGIN</a>
-    </form>
-  </div>
-</div>
-
 	{{> bootstrapFiles}}
-	<script src="./js/menuButton.js"></script>
 	<script src="./js/index.js"></script>
 	{{> facebook}}
 	<script src="/js/facebook.js"></script>
