@@ -18,6 +18,16 @@ function initializePage() {
 		$(this).closest('tr').remove();
 		console.log('clicked');
 	});
+	$('#editBudget').click(function(e){
+		e.preventDefault();
+		var r= $('<button type = "button" class = "btn" id="remove">Remove</button>');
+	$("#removeButton").html(r);
+	});
+ $('.btn').toggle();
+	$('#hideshow').on('click', function(event) {
+	   $('.btn').toggle('slow');
+	    });
+
 	$.get('/data', sortDate);
 }
 
