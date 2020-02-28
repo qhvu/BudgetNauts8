@@ -1,7 +1,7 @@
 function checkLoginState() {
   FB.getLoginStatus(function(response) {
     statusChangeCallback(response);
-    window.top.location = "https://a7-budgetnauts.herokuapp.com/homeScreen";
+    window.top.location = "https://a8-budgetnauts.herokuapp.com/homeScreen";
   });
 }
 
