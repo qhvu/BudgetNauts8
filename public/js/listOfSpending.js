@@ -13,8 +13,10 @@ function initializePage() {
 //	$('#remove').click(function(e){
 	//	$.get("/data",removeRow);
 //	});
-	$('#table1').on("click", "td", function(){
+	$('.btn').click(function(e){
 		//alert('clicked');
+		e.preventDefault();
+		console.log('button working');
 		$(this).closest('tr').remove();
 		console.log('clicked');
 	});
