@@ -7,7 +7,7 @@ exports.view = function(request, response){
 };
 
 exports.pageB = function(req,res){
-	data['pageB'] = true;
+	data['pageA'] = true;
 	res.render('homeScreen', data);
 };
 

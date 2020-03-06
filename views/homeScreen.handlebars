@@ -27,7 +27,26 @@
     </div>
     <br>
 </div>
-{{#if pageB}}  <div style = "float:right;">
+
+<div style = "float:right;">
+		<a href="#" id = "button" class = "button">+</a>
+	</div>
+	<div class = "bg-modal">
+				<div class = "modal-content">
+					<div class = "close">+</div>
+					<form method = "get" action = "/addHomeScreen" style="text-align: center">
+						<h1>+</h1>
+						<input type = "date" placeholder="Date" name="date">
+						<input type = "text" placeholder="Name" name="name">
+						<input type = "text" placeholder="Category" name="category">
+						<input type = "text" placeholder="Price" name="price">
+						<input type ="submit" id = "add" class = "button">
+					</form>
+				</div>
+		</div>
+
+{{#if pageB}}
+<div style = "float:right;">
 		<a href="#" id = "button" class = "button">+</a>
 	</div>
 	<div class = "bg-modal">
@@ -43,9 +62,7 @@
 					</form>
 				</div>
 			</div>
-
-	<script src="./js/menuButton.js"></script>
-	{{else}}{{/if}}
+{{else}}{{/if}}
 
 
 
