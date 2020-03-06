@@ -19,30 +19,23 @@
 
     <table class='table-striped ' id = "table1">
       <thead>
-
-          <th>ID</th>
           <th>Date</th>
           <th>Name</th>
           <th>Category</th>
           <th>Price</th>
-    
-
       </thead>
 
       <tbody>
       	{{#each purchase}}
 
-            <td data-label = "ID">({{@index}})</td>
           	<td data-label = "Date">{{date}}</td>
           	<td data-label = "Name">{{name}}</td>
           	<td data-label = "Category">{{category}}</td>
           	<td data-label = "Price">${{price}}</td>
             <td class = "text-center"><button type = "button" class = "btn" id="remove">Remove</button></td>
-
         	</tr>
     	</div>
         {{/each}}
-
       </tbody>
     </table>
 

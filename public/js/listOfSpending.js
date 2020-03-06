@@ -13,11 +13,23 @@ function initializePage() {
 //	$('#remove').click(function(e){
 	//	$.get("/data",removeRow);
 //	});
-	$('#table1').on("click", "td", function(){
+	$('.btn').click(function(e){
 		//alert('clicked');
+		e.preventDefault();
+		console.log('button working');
 		$(this).closest('tr').remove();
 		console.log('clicked');
 	});
+	$('#editBudget').click(function(e){
+		e.preventDefault();
+		var r= $('<button type = "button" class = "btn" id="remove">Remove</button>');
+	$("#removeButton").html(r);
+	});
+ $('.btn').toggle();
+	$('#hideshow').on('click', function(event) {
+	   $('.btn').toggle('slow');
+	    });
+
 	$.get('/data', sortDate);
 }
 
